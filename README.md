@@ -1,16 +1,15 @@
 # POKEDEX
 
 Nome dos integrantes: 
-- Pessoa 1
-- Pessoa 2
-- Pessoa 3
+- Amanda Viana
+- Diego Motta
+- Priscilla Lucena
 
-Link do Surge: www.link.com.br
+Link do Surge: 
 
 O que funciona:
-- Item 1
-- Item 2
+- Router
+- Postman configurado, mas ainda não implantado
 
 O que não funciona: 
-- Item 3
-- Item 4
+- na
