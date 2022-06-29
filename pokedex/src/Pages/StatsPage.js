@@ -1,16 +1,17 @@
 import React from 'react';
 import { useNavigate } from "react-router-dom";
+import { Header } from '../Components/Header';
 
 
 const Stats = () => {
 
   const navigate = useNavigate();
 
-  return(
+  return (
     <div>
-        <h1>Stats</h1>
-        <button onClick={() => navigate("/")}>Home</button>
-        <button onClick={() => navigate("/pokedex")}>Pokedex</button>
+      <Header
+        stats={"Detalhes Pokemón"}
+        cont={2} />
     </div>
   );
 }

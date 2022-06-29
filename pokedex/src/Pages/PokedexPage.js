@@ -1,6 +1,7 @@
 import React from 'react';
 import { useNavigate } from "react-router-dom";
-import { PokeCards } from './Cards/PokeCards';
+import {PokeCardRemove} from "../Components/PokeCardRemove"
+import { Header } from '../Components/Header';
 
 
 const Pokedex = () => {
@@ -9,10 +10,12 @@ const Pokedex = () => {
 
   return(
     <div>
-        <h1>Pokedex</h1>
-        <button onClick={() => navigate("/")}>Home</button>
-        <button onClick={() => navigate("/stats")}>Stats</button>
-        <PokeCards/>
+      <Header 
+      pokedex={"Pokedex"}
+      cont={1}/>
+        
+        <PokeCardRemove />
+        
     </div>
   );
 }
