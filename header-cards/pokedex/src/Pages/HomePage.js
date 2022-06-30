@@ -1,5 +1,7 @@
 import React from 'react';
 import { useNavigate } from "react-router-dom";
+import { Header } from '../Components/Header';
+import { PokeCardAdd } from '../Components/PokeCardAdd'
 
 
 const Home = () => {
@@ -8,9 +10,11 @@ const Home = () => {
 
   return(
     <div>
-        <h1>Home Page</h1>
-        <button onClick={() => navigate("/pokedex")}>Pokedex</button>
-        <button onClick={() => navigate("/stats")}>Stats</button>
+      <Header 
+      home={"Home Page"}
+      cont={0}/>
+
+        <PokeCardAdd/>
     </div>
   );
 }
