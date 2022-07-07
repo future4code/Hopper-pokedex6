@@ -26,7 +26,7 @@ const Pokedex = () => {
 
   return (
     <div>
-        {console.log(states.pokedex)}
+      <button onClick={() => navigate("/")}>Home</button>
       {states.pokedex &&
         states.pokedex.map((pokemon) => {
           return (

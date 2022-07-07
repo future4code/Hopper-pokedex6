@@ -31,7 +31,7 @@ function PokeCard(props) {
       <p>{props.nome}</p>
       <Image src={props.img}></Image>
       <DivButtons>
-        {navigate === "/pokedex" ? (
+        {window.location.href.indexOf("pokedex") != -1 ? (
           <button onClick={props.remove}>Remover</button>
         ) : (
           <button onClick={props.add}>Adicionar</button>

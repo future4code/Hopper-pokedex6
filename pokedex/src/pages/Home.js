@@ -36,12 +36,16 @@ const Home = () => {
     states.setPokedex(newListPokemon);
   };
 
+ 
+
   return (
     <div>
+        <button onClick={() => navigate("/pokedex")}>Pokedex</button>
+    
       {states.pokemonList &&
         states.pokemonList.map((pokemon) => {
           return (
-            <PokeCard
+            <PokeCard 
               id={pokemon.id}
               nome={pokemon.name}
               img={pokemon.sprites.front_default}
@@ -54,6 +58,8 @@ const Home = () => {
             />
           );
         })}
+
+
 
         {/* <div>
             <h1>Pokedex</h1>
