@@ -34,7 +34,11 @@ https://mighty-bird.surge.sh
 
 O que funciona:
 - Router
-- Postman configurado, mas ainda não implantado
+- Postman configurado
+- Renderiza Pokemons da Api
+- Envia pokemons escolhidos pra Pokedex
+- Deleta pokemons da pokedex e volta para a Lista principal
+- Mostra detalhes dos pokemons quando clicado na página inicial e Pokedex.
 
 O que não funciona: 
-- na
+
