@@ -39,7 +39,6 @@ const GlobalState = (props) => {
             types: response.data.types,
             sprites: response.data.sprites
           };
-
           //condição para o envio da lista
           //se estiver do tamanho que desejar vai para o state
           if (newList.length === 20) {
