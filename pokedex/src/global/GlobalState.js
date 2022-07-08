@@ -15,10 +15,8 @@ const GlobalState = (props) => {
     setPokedex
   };
 
-  //Teste de local storage
-  const guardaPokemons = () => {
-    localStorage.setItem("listaPokedex", pokedex)
-  }
+  console.log(pokemonList)
+  console.log(pokemonDetails)
 
   useEffect(() => {
     getPokemons();
@@ -46,15 +44,16 @@ const GlobalState = (props) => {
           }
         })
         .catch((err) => {
-          console.log(err.data.message);
+          console.log(err.data);
         });
     }
   };
 
+
+
   return (
     <div>
-      {guardaPokemons}
-      <GlobalStateContext.Provider value={states}>
+        <GlobalStateContext.Provider value={states}>
         {props.children}
       </GlobalStateContext.Provider>
     </div>

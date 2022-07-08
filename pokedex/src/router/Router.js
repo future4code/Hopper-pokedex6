@@ -2,7 +2,6 @@ import { BrowserRouter, Route, Routes } from "react-router-dom";
 import Home from "../pages/Home";
 import Pokedex from "../pages/Pokedex";
 import Details from "../pages/Details";
-import Header from "../components/Header";
 
 const Router = () => {
   return (

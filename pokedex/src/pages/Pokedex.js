@@ -1,7 +1,9 @@
 import React, { useContext } from "react";
 import { useNavigate } from "react-router-dom";
-import PokeCard from "../components/PokeCard";
+import PokeCard from "../components/PokeCard/PokeCard";
 import GlobalStateContext from "../global/GlobalStateContext";
+import Header from "../components/Header/Header";
+import {PokeContainer, Container, GlobalStyle} from "./styledPokedex"
 
 const Pokedex = () => {
   const states = useContext(GlobalStateContext);
@@ -18,15 +20,17 @@ const Pokedex = () => {
   };
 
   const functionDetails = (pokemon) => {
-    //envia para pág de detalhes
     states.setPokemonDetails(pokemon);
-    //troca de pág
     navigate("/details");
   };
 
   return (
-    <div>
-      <button onClick={() => navigate("/")}>Home</button>
+    <PokeContainer>
+       <GlobalStyle />
+       <Header 
+       pokedex={"POKEDEX"}
+       cont={1}/>
+      
       {states.pokedex &&
         states.pokedex.map((pokemon) => {
           return (
@@ -43,7 +47,7 @@ const Pokedex = () => {
             />
           );
         })}
-    </div>
+    </PokeContainer>
   );
 };
 
