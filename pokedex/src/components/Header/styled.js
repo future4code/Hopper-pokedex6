@@ -12,8 +12,8 @@ export const DivHeader = styled.header`
   align-items: center;
   align-content: center;
   img {
-    width: 300px;
-    height: 60px;
+    width: 350px;
+    height: 80px;
     justify-content: center;
   }
   button{

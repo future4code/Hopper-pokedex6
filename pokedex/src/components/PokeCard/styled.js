@@ -125,5 +125,6 @@ export const BorderDiv = styled.div`
   align-content: center;
   padding-bottom: 10px;
   margin: 5px;
-  background-color: #1E90FF;
+  // background-color: #1E90FF;
+  background-color: #FAFAD2;
 `;
