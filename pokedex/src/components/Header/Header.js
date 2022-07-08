@@ -11,30 +11,30 @@ const Header = (props) => {
       case 0:
         return <div>
           <div>
-            <button onClick={() => goToPokedex(navigate)}>
+            <Botao onClick={() => goToPokedex(navigate)}>
               Pokedex
-            </button>
+            </Botao>
           </div>
           <h1>{props.home}</h1>
         </div>;
       case 1:
         return <div>
           <div>
-            <button onClick={() => goToHome(navigate)}>
+            <Botao onClick={() => goToHome(navigate)}>
               Home
-            </button>
+            </Botao>
             </div>
           <h1>{props.pokedex}</h1>
         </div>;
       case 2:
         return <div>
           <div>
-            <button onClick={() => goToHome(navigate)}>
+            <Botao onClick={() => goToHome(navigate)}>
               Home
-            </button>
-            <button onClick={() => goToPokedex(navigate)}>
+            </Botao>
+            <Botao onClick={() => goToPokedex(navigate)}>
               Pokedex
-            </button>
+            </Botao>
           </div>
           <h1>{props.details}</h1>
         </div>;

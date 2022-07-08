@@ -97,7 +97,7 @@ export const Image = styled.img`
   margin: auto;
   font-weight: lighter;
   width: 60%;
-`;
+ `;
 export const DivCard = styled.div`
   display: flex;
   width: 250px;
@@ -125,4 +125,5 @@ export const BorderDiv = styled.div`
   align-content: center;
   padding-bottom: 10px;
   margin: 5px;
+  background-color: #1E90FF;
 `;

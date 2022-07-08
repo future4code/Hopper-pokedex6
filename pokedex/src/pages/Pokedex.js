@@ -28,7 +28,7 @@ const Pokedex = () => {
 
     <GlobalStyle>
       <Header
-        pokedex={"POKEDEX"}
+        // pokedex={"POKEDEX"}
         cont={1} />
       <Container>
         {states.pokedex &&

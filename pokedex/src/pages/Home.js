@@ -30,7 +30,7 @@ const Home = () => {
    
     <GlobalStyle>
           <Header 
-          home={"HOME"}
+          // home={"HOME"}
           cont={0}/>
           <Container>
     {states.pokemonList &&

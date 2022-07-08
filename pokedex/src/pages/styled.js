@@ -6,12 +6,13 @@ export const GlobalStyle = styled.div`
   background-color: rgb(52, 61, 100); 
   width: 100vw;
   height: auto;
-`;
+ `;
 
 export const Container = styled.div`
   display: flex;
-
-  justify-content: space-between;
+  justify-content: space-around;
   flex-wrap: wrap;
 `;
+
+
 
