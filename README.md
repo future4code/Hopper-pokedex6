@@ -6,7 +6,7 @@
 <br/>
 <br/>
 
-### Integrantes do grupo de desenvolvimento
+### 🤝 Integrantes do grupo de desenvolvimento
 <table>
   <tr>
     <th>Amanda Viana Fajardo</th>
