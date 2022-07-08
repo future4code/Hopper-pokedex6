@@ -3,6 +3,7 @@ import { useNavigate } from "react-router-dom";
 import PokeCard from "../components/PokeCard";
 import GlobalStateContext from "../global/GlobalStateContext";
 
+
 const Pokedex = () => {
   const states = useContext(GlobalStateContext);
   const navigate = useNavigate();
@@ -33,7 +34,7 @@ const Pokedex = () => {
             <PokeCard
               id={pokemon.id}
               nome={pokemon.name}
-              img={pokemon.sprites.front_default}
+              img={(`https://professorlotus.com/Sprites/${pokemon.name}.gif`)}
               remove={() => {
                 removePokemon(pokemon);
               }}

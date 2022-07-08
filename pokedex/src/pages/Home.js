@@ -48,7 +48,7 @@ const Home = () => {
             <PokeCard 
               id={pokemon.id}
               nome={pokemon.name}
-              img={pokemon.sprites.front_default}
+              img={(`https://professorlotus.com/Sprites/${pokemon.name}.gif`)}
               add={() => {
                 addPokemon(pokemon);
               }}
