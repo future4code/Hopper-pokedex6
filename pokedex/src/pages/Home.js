@@ -2,9 +2,9 @@ import { useContext } from "react";
 import { useNavigate } from "react-router-dom";
 import GlobalStateContext from "../global/GlobalStateContext";
 import Header from "../components/Header/Header";
-import {HomeContainer, GlobalStyle} from "./styledHome"
-
+import {Container, GlobalStyle} from "./styled"
 import PokeCard from "../components/PokeCard/PokeCard";
+
 
 const Home = () => {
   const states = useContext(GlobalStateContext);
@@ -27,12 +27,12 @@ const Home = () => {
   };
 
   return (
-    <HomeContainer>
-    <GlobalStyle />
+   
+    <GlobalStyle>
           <Header 
           home={"HOME"}
           cont={0}/>
-          
+          <Container>
     {states.pokemonList &&
       states.pokemonList.map((pokemon) => {
         return (
@@ -49,7 +49,8 @@ const Home = () => {
           />
         );
       })}
-      </HomeContainer>
+      </Container>
+      </GlobalStyle>
 );
 };
 
