@@ -1,8 +1,10 @@
 import { useContext } from "react";
 import { useNavigate } from "react-router-dom";
 import GlobalStateContext from "../global/GlobalStateContext";
+import Header from "../components/Header/Header";
+import {Container, GlobalStyle} from "./styled"
+import PokeCard from "../components/PokeCard/PokeCard";
 
-import PokeCard from "../components/PokeCard";
 
 const Home = () => {
   const states = useContext(GlobalStateContext);
@@ -20,68 +22,36 @@ const Home = () => {
     states.setPokemonList(newListPokemon);
   };
   const functionDetails = (pokemon) => {
-    //envia o pokemon para a pág de detalhes
     states.setPokemonDetails(pokemon);
-    //muda para a pág de detalhes
-    navigate("/details");
+      navigate("/details");
   };
-
-  const removePokemon = (pokemon) => {
-    const newListPokemon = states.pokedex.filter((poke) => {
-      return poke !== pokemon;
-    });
-    //envia de volta o poke para a home
-    states.setPokemonList([pokemon, ...states.pokemonList]);
-    //retira da pokedex
-    states.setPokedex(newListPokemon);
-  };
-
- 
 
   return (
-    <div>
-        <button onClick={() => navigate("/pokedex")}>Pokedex</button>
-    
-      {states.pokemonList &&
-        states.pokemonList.map((pokemon) => {
-          return (
-            <PokeCard 
-              id={pokemon.id}
-              nome={pokemon.name}
-              img={pokemon.sprites.front_default}
-              add={() => {
-                addPokemon(pokemon);
-              }}
-              details={() => {
-                functionDetails(pokemon);
-              }}
-            />
-          );
-        })}
-
-
-
-        {/* <div>
-            <h1>Pokedex</h1>
-        {console.log(states.pokedex)}
-      {states.pokedex &&
-        states.pokedex.map((pokemon) => {
-          return (
-            <PokeCard
-              id={pokemon.id}
-              nome={pokemon.name}
-              img={pokemon.sprites.front_default}
-              remove={() => {
-                removePokemon(pokemon);
-              }}
-            />
-
-          );
-        })}
-        </div> */}
-
-    </div>
-  );
+   
+    <GlobalStyle>
+          <Header 
+          // home={"HOME"}
+          cont={0}/>
+          <Container>
+    {states.pokemonList &&
+      states.pokemonList.map((pokemon) => {
+        return (
+          <PokeCard
+            id={pokemon.id}
+            nome={pokemon.name}
+            img={pokemon.sprites.front_default}
+            add={() => {
+              addPokemon(pokemon);
+            }}
+            details={() => {
+              functionDetails(pokemon);
+            }}
+          />
+        );
+      })}
+      </Container>
+      </GlobalStyle>
+);
 };
 
 export default Home;
