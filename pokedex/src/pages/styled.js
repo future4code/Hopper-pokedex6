@@ -3,9 +3,9 @@ import styled from "styled-components";
 export const GlobalStyle = styled.div`
   padding: 0;
   margin: 0;
-  background-color: #FAFAD2; 
   width: 100vw;
   height: auto;
+  background-color: #FAFAD2; 
  `;
 
 export const Container = styled.div`

@@ -1,13 +1,12 @@
 import styled from "styled-components";
 
 export const GlobalStyle = styled.div`
-   background-color: #FAFAD2; 
    width: 100vw;
    height: 850px;
    font-family: 'Inconsolata', monospace;
    align-content: center;
    align-items: center;
-   
+   background-color: #FAFAD2; 
  `;
 
  export const ContainerGeral = styled.div `
@@ -15,7 +14,6 @@ export const GlobalStyle = styled.div`
   grid-template-columns: 1fr 1fr 1fr 1fr;
   grid-template-rows: 300px;
   justify-content: center;
-
  `;
 
  export const ContainerImages = styled.span`
