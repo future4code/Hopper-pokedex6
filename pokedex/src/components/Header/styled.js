@@ -11,6 +11,7 @@ export const DivHeader = styled.header`
   justify-content: center;
   align-items: center;
   align-content: center;
+  font-family: 'Permanent Marker', cursive;
   img {
     width: 350px;
     height: 80px;
@@ -18,6 +19,7 @@ export const DivHeader = styled.header`
   }
   button{
     justify-items: flex-start;
+    font-family: 'Permanent Marker', cursive;
   }
  `;
 
@@ -27,7 +29,7 @@ export const Botao = styled.button`
   border-radius: 30px;
   border-color: #8B8989;
   background-color: #EEDD82;
-  color: #0000FF;
+  color: #191970;
   :hover {
     background-color: #EEDD82;
     transform: scale(1.5);

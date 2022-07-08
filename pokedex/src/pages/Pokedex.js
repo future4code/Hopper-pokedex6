@@ -13,9 +13,7 @@ const Pokedex = () => {
     const newListPokemon = states.pokedex.filter((poke) => {
       return poke !== pokemon;
     });
-    //envia de volta o poke para a home
     states.setPokemonList([pokemon, ...states.pokemonList]);
-    //retira da pokedex
     states.setPokedex(newListPokemon);
   };
 
@@ -28,7 +26,6 @@ const Pokedex = () => {
 
     <GlobalStyle>
       <Header
-        // pokedex={"POKEDEX"}
         cont={1} />
       <Container>
         {states.pokedex &&
@@ -37,7 +34,7 @@ const Pokedex = () => {
               <PokeCard
                 id={pokemon.id}
                 nome={pokemon.name}
-                img={pokemon.sprites.front_default}
+                img={(`https://professorlotus.com/Sprites/${pokemon.name}.gif`)}
                 remove={() => {
                   removePokemon(pokemon);
                 }}

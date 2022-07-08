@@ -10,16 +10,12 @@ const Home = () => {
   const states = useContext(GlobalStateContext);
   const navigate = useNavigate();
 
-  //add pokemons na pokedex através do estado global
   const addPokemon = (pokemon) => {
-    //filtra o pokemon selecionado
-    const newListPokemon = states.pokemonList.filter((poke) => {
+       const newListPokemon = states.pokemonList.filter((poke) => {
       return poke !== pokemon;
     });
-    //envia o pokemon para a pokedex
-    states.setPokedex([pokemon, ...states.pokedex]);
-    //retira da lista na homePage
-    states.setPokemonList(newListPokemon);
+       states.setPokedex([pokemon, ...states.pokedex]);
+       states.setPokemonList(newListPokemon);
   };
   const functionDetails = (pokemon) => {
     states.setPokemonDetails(pokemon);
@@ -30,8 +26,7 @@ const Home = () => {
    
     <GlobalStyle>
           <Header 
-          // home={"HOME"}
-          cont={0}/>
+            cont={0}/>
           <Container>
     {states.pokemonList &&
       states.pokemonList.map((pokemon) => {
@@ -39,7 +34,7 @@ const Home = () => {
           <PokeCard
             id={pokemon.id}
             nome={pokemon.name}
-            img={pokemon.sprites.front_default}
+            img={(`https://professorlotus.com/Sprites/${pokemon.name}.gif`)}
             add={() => {
               addPokemon(pokemon);
             }}

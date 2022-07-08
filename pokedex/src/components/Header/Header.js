@@ -43,8 +43,9 @@ const Header = (props) => {
 
   return (
     <DivHeader>
-      <img src="https://pokedex.sleduardo.dev/img/logo.svg" alt="" />
       {botao(props.cont)}
+      <img src="https://pokedex.sleduardo.dev/img/logo.svg" alt="" />
+      
 
     </DivHeader>
   );
