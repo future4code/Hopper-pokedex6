@@ -6,13 +6,12 @@ export const DivButtons = styled.div`
   height: 50%;
   padding: 0;
   margin: 0;
-
   justify-content: space-around;
 `;
 export const ButtonDetails = styled.button`
   border: 1px solid transparent;
   background-color: transparent;
-  color: gray;
+  color: #696969;
   display: flex;
   flex-direction: column;
   transition: 0.2s ease;
@@ -40,7 +39,7 @@ export const ButtonDetails = styled.button`
 export const ButtonAdd = styled.button`
   border: 1px solid transparent;
   background-color: transparent;
-  color: gray;
+  color: #696969;
   display: flex;
   flex-direction: column;
   transition: 0.2s ease;
@@ -68,7 +67,7 @@ export const ButtonAdd = styled.button`
 export const ButtonRemove = styled.button`
 border: 1px solid transparent;
   background-color: transparent;
-  color: gray;
+  color: #696969;
   display: flex;
   flex-direction: column;
   transition: 0.2s ease;
@@ -78,7 +77,6 @@ border: 1px solid transparent;
   align-content: center;
   margin-left: 0.2em;
   cursor: pointer;
-  font-weight: bold;
   transition: transform 0.5s;
   img {
     width: 50px;
@@ -103,8 +101,9 @@ export const DivCard = styled.div`
   width: 250px;
   height: 280px;
   flex-direction: column;
-
-  background: rgba(8, 5, 8, 0.2);
+  font-family: 'Inconsolata', monospace;
+  color: #191970;
+  background: #1E90FF;
   align-items: center;
   justify-content: space-between;
   border: 1px black solid;
@@ -125,6 +124,5 @@ export const BorderDiv = styled.div`
   align-content: center;
   padding-bottom: 10px;
   margin: 5px;
-  // background-color: #1E90FF;
   background-color: #FAFAD2;
 `;

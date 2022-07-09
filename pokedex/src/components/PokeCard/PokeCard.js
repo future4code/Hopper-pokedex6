@@ -9,7 +9,7 @@ function PokeCard(props) {
     <DivCard id={props.id}>
       <BorderDiv>
         <Image src={props.img} alt={props.name}></Image>
-        <h4>{props.nome}</h4>
+        <h4>{props.nome.toUpperCase()}</h4>
       </BorderDiv>
       <DivButtons>
         {window.location.href.indexOf("pokedex") !== -1 ? (
